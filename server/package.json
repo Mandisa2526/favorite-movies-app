@@ -1,11 +1,15 @@
-{
+{ 
+  "homepage": "https://Mandisa2526.github.io/favorite-movies-app",
   "name": "server",
   "version": "1.0.0",
   "main": "server.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ../server/server.js"
+    "start": "node ../server/server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+
   },
   "keywords": [],
   "author": "",
